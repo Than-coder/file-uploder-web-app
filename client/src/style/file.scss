@@ -1,0 +1,44 @@
+.file {
+    display: grid;
+    // width: 95%;
+    margin: 1rem auto;
+
+    .header,
+    .body {
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        grid-column-gap: 8px;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        background-color: #333;
+        padding: 5px;
+        color: #fff;
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+    .file-name-wrapper {
+        .name {
+            max-width: 400px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .file {
+        width: 100%;
+        .header,
+        .body {
+            grid-template-columns:1fr;
+           
+        }
+
+        .header {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.move-popup {
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        text-align: center;
+        padding: 5px 0;
+        font-size: 15px;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        
+    }
+
+    .button-group {
+        display: flex;
+        .btn {
+            margin: 0 10px;
+        }
+    }
+
+}

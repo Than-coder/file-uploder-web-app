@@ -1,0 +1,81 @@
+$fileExtLogoSize: 30px;
+$fileExtLogoMinSize: 50px;
+$checkBoxSize: 30px;
+
+.body {
+    margin: 4px;
+    cursor: pointer;
+    &:hover .name {
+        color: teal;
+    }
+    
+    .file-name-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 6px 4px;
+
+        // checkbox
+        .check-box {
+            margin-right: 5px;
+            font-size: 1.5rem;
+            width: $checkBoxSize;
+            height: $checkBoxSize;
+            
+        }
+        // logo
+        .logo {
+            width: $fileExtLogoSize;
+            height: $fileExtLogoSize;
+            margin-right: 5px;
+        }
+
+        // file name
+        .name {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            // max-width: 400px;
+        }
+        .type {
+            min-width: 200px;
+        }
+    }
+
+    &:nth-child(even) {
+        background: rgb(233, 233, 233);
+    }
+    
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    // progress
+    .progress {
+        width: 100%;
+        height: 2px;
+        background-color: rgb(224, 224, 224);
+
+        .bar {
+            width: 50%;
+            height: inherit;
+            background-color: teal;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .body {
+        padding: 6px 8px;
+
+        .file-name-wrapper {
+            display: grid;
+
+            .logo {
+                width: $fileExtLogoMinSize;
+                height: $fileExtLogoMinSize;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

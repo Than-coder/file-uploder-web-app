@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 9px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(109, 109, 109);
+    background-color: teal;
+    color: #fff;
+
+    &:hover {
+        background-color: rgb(14, 150, 150);
+    }
+}
